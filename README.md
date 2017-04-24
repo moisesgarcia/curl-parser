@@ -17,4 +17,39 @@ $curl = "curl -X POST https://www.mydomain.com/mywebservice/ \
 
 $curl_parser = new CurlParser($curl);
 $curl_data = $curl_parser->getData();
+/*
+$curl_data = Array
+(
+    [url] => https://www.mydomain.com/mywebservice/
+    [method] => POST
+    [headers] => Array
+        (
+            [0] => Array
+                (
+                    [key] => Accept
+                    [value] => text/xml
+                )
+
+            [1] => Array
+                (
+                    [key] => Content-Type
+                    [value] => application/x-www-form-urlencoded
+                )
+
+        )
+
+    [basic_auth] => Array
+        (
+            [user] => user1
+            [pass] => sdhgsdjgsjhgd
+        )
+
+    [data] => myvariable=1112121another[one]=sample text
+    [files] => Array
+        (
+        )
+
+    [content_type] => application/x-www-form-urlencoded
+)
+*/
 ```
